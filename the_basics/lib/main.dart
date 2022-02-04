@@ -11,11 +11,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.cyan[600],
-          title: const Text('Low Risk Low Profit'),
-        ),
-      ),
+          backgroundColor: Colors.black,
+          appBar: AppBar(
+            backgroundColor: Colors.cyan[600],
+            title: const Text('LRLP'),
+          ),
+          body: Center(
+            child: Container(
+              child: const Text(
+                'Low Risk Low Profit',
+                style: TextStyle(color: Colors.grey),
+              ),
+              margin: const EdgeInsets.all(100),
+            ),
+          )),
     );
   }
 }
